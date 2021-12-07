@@ -1,0 +1,23 @@
+:root {
+  --primary-color: hsl(250 30% 40%);
+  --secondary-color: hsl(190 40% 40%);
+  --tinted-background: hsl(0 0% 100% / 0.8);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: hsl(250 30% 60%);
+    --secondary-color: hsl(190 40% 60%);
+    --tinted-background: hsl(0 0% 0% / 0.6);
+  }
+}
+
+$colors: (
+  primary: var(--primary-color),
+  secondary: var(--secondary-color),
+);
+
+$backgrounds: (
+  tinted: var(--tinted-background),
+);

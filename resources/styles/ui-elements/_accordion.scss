@@ -1,0 +1,49 @@
+.bs-accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    margin-bottom: 0.6em;
+    border-radius: 1em;
+    overflow: hidden;
+
+    background-color: define-color(secondary);
+
+    &.collapsed {
+      --secondary-color: #{define-color(primary)};
+    }
+
+    &,
+    &.collapsing {
+      transition: height 0.35s ease, background-color 0.35s ease;
+    }
+  }
+
+  &__header,
+  &__inner {
+    padding: 1.2em 1.6em;
+  }
+
+  &__header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    background-color: define-background(tinted);
+  }
+
+  &__icon {
+    height: 1.2em;
+    width: 1.2em;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(-1);
+
+    .collapsed & {
+      transform: scale(1);
+    }
+  }
+}

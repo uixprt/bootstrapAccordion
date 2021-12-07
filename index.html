@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Bootstrap Accordion - Minimal markup</title>
+
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900" />
+    <link rel="stylesheet" href="dist/styles/main.css" />
+
+    <!--according to https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7-->
+    <link rel="icon" href="dist/favicons/favicon.ico" sizes="any" />
+    <!-- REVISED (Nov 8)! -->
+    <link rel="icon" href="dist/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="mask-icon" href="dist/favicons/safari-pinned-tab.svg" color="#24a1bc" />
+    <link rel="apple-touch-icon" href="/dist/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="dist/favicons/site.webmanifest" />
+    <meta name="theme-color" content="#e2e2e2" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="visibility: hidden; position: absolute; height: 0; width: 0; overflow: hidden">
+      <symbol id="arrowDown" viewBox="0 0 16 16">
+        <path
+          fill-rule="evenodd"
+          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+        />
+      </symbol>
+    </svg>
+
+    <div class="bs-container" style="padding-top: 1.6em">
+      <ul class="bs-accordion" id="bsAccordion1">
+        <li class="bs-accordion__item" data-toggle="collapse" data-target="#id-1" aria-expanded="true" aria-controls="id-1">
+          <div class="bs-accordion__header" role="button">
+            <h2 class="bs-accordion__title">Collapsible Group Item #1</h2>
+            <div class="bs-accordion__icon">
+              <svg>
+                <use xlink:href="#arrowDown"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="bs-accordion__content collapse show" id="id-1" data-parent="#bsAccordion1">
+            <div class="bs-accordion__inner">
+              Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the
+              <code>.show</code> class.
+            </div>
+          </div>
+        </li>
+        <li class="bs-accordion__item collapsed" data-toggle="collapse" data-target="#id-2" aria-expanded="false" aria-controls="id-2">
+          <div class="bs-accordion__header" role="button">
+            <h2 class="bs-accordion__title">Collapsible Group Item #2</h2>
+            <div class="bs-accordion__icon">
+              <svg>
+                <use xlink:href="#arrowDown"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="bs-accordion__content collapse" id="id-2" data-parent="#bsAccordion1">
+            <div class="bs-accordion__inner">Some placeholder content for the second accordion panel. This panel is hidden by default.</div>
+          </div>
+        </li>
+        <li class="bs-accordion__item collapsed" data-toggle="collapse" data-target="#id-3" aria-expanded="false" aria-controls="id-3">
+          <div class="bs-accordion__header" role="button">
+            <h2 class="bs-accordion__title">Collapsible Group Item #3</h2>
+            <div class="bs-accordion__icon">
+              <svg>
+                <use xlink:href="#arrowDown"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="bs-accordion__content collapse" id="id-3" data-parent="#bsAccordion1">
+            <div class="bs-accordion__inner">
+              And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script defer src="dist/scripts/main.js"></script>
+  </body>
+</html>
